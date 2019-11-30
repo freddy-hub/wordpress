@@ -1,0 +1,141 @@
+.ivd-referenzen {
+  padding: 64px 0 112px 0;
+
+  &__slide-inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__portrait-column {
+    width: 32%;
+    padding: 0 5px;
+    img {
+      padding: 0 30px;
+    }
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  &__portrait-text {
+    text-align: center;
+    color: #0a51a1;
+    margin-top: 15px;
+    padding: 0px;
+  }
+  &__text-column {
+    width: 68%;
+    padding-left: 40px;
+    padding-right: 25px;
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__stars {
+    color: #0a51a1;
+    margin-top: 15px;
+    i {
+      font-size: 26px;
+    }
+  }
+  &__text {
+    margin-top: 30px;
+  }
+}
+
+.ivd-referenzen__slider {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 130px;
+  max-width: 900px;
+}
+
+.ivd-referenzen__slide {
+  // height: 200px !important;
+  display: flex !important;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.ivd-referenzen__slider img {
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+  width: auto;
+  max-height: 100%;
+}
+
+.ivd-referenzen__slider h3 {
+  // text-align: center;
+  // font-family: "Poppins", Sans-serif;
+  // font-size: 15px;
+  // font-weight: 600;
+  // text-transform: uppercase;
+  // line-height: 1.2em;
+  // color: #1a758d;
+  // transform: scale(1);
+  // z-index: 100;
+}
+
+.ivd-referenzen__slider .slick-arrow {
+  position: absolute;
+  z-index: 1000;
+  color: #1a758d;
+  font-size: 40px;
+  top: 40%;
+  border: none;
+  background-color: transparent;
+}
+
+.ivd-referenzen__slider .slick-arrow:hover {
+  color: #1a758d;
+  background-color: transparent;
+}
+
+.ivd-referenzen__slider .slick-prev {
+  left: -140px;
+  @media (max-width: $breakpoint-xl) {
+    left: -50px;
+  }
+  @media (max-width: 1100px) {
+    left: 5px;
+  }
+}
+
+.ivd-referenzen__slider .slick-next {
+  right: -140px;
+  @media (max-width: $breakpoint-xl) {
+    right: -50px;
+  }
+  @media (max-width: 1100px) {
+    right: 5px;
+  }
+}
+
+.ivd-referenzen__slider .slick-dots {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+  margin-left: 0;
+}
+
+.ivd-referenzen__slider .slick-dots li {
+  background-color: rgba(26, 117, 141, 0.74);
+  height: 8px;
+  width: 8px;
+  margin: 0 5.5px;
+  border-radius: 50%;
+}
+
+.ivd-referenzen__slider .slick-dots li:hover {
+  cursor: pointer;
+}
+
+.ivd-referenzen__slider .slick-dots li.slick-active {
+  background-color: #1a758d !important;
+}
+
+.ivd-referenzen__slider .slick-dots button {
+  visibility: hidden;
+}

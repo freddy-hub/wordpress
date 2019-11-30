@@ -1,0 +1,160 @@
+.ivd-magazin {
+  padding: 0 0 112px 0;
+
+  &--archive {
+    margin-top: 180px;
+  }
+
+  h2 {
+    text-align-last: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .container > a {
+    text-align: center;
+  }
+  &__grid {
+    // display: flex;
+    // flex-wrap: wrap;
+  }
+  &__item {
+    margin-bottom: 60px;
+  }
+  &__item-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__image-container {
+    height: 278px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__bottom-container {
+    background-color: #eeeeee;
+    padding: 15px 15px 25px 15px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__heading-link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__grid-text {
+    margin-bottom: 30px;
+  }
+  &__grid-button {
+    margin-top: auto;
+    min-width: 1px !important;
+  }
+  &__button-container {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  &__archive-link {
+    text-align: right;
+    color: #061849;
+    position: relative;
+    top: -40px;
+    a {
+      color: #061849;
+      font-size: 20px;
+    }
+  }
+}
+
+.round {
+  position: relative;
+}
+
+.round label {
+  background-color: #fff;
+  border: 1px solid #061849;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: #061849;
+  border-color: #061849;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.round label .label-text {
+  position: relative;
+  left: 60px;
+  bottom: 4px;
+  @media (max-width: 600px) {
+    bottom: 0;
+  }
+}
+
+.ivd-magazin-full {
+  padding: 64px 0 112px 0;
+
+  h2 {
+    text-align: center;
+  }
+  .container {
+    & > p {
+      text-align: center;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 60px;
+    justify-content: flex-end;
+  }
+  &__checkbox-group {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+    right: 130px;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+    .label-text {
+      text-transform: initial;
+      white-space: nowrap;
+    }
+  }
+}

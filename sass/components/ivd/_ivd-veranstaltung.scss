@@ -1,0 +1,99 @@
+.ivd-veranstaltung {
+  h2 {
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 120px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    &--in-listing {
+      margin-bottom: 100px;
+    }
+  }
+  &__column-image-left {
+    width: 50%;
+    img {
+      border-top-right-radius: 200px;
+      display: block;
+      margin-right: auto;
+      @media (max-width: 500px) {
+        border-top-right-radius: 100px;
+      }
+    }
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+    }
+  }
+  &__column-text-right {
+    width: 50%;
+    padding: 0 60px;
+    margin-bottom: 20px;
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+      margin-top: 30px;
+      padding: 0 25px;
+    }
+  }
+
+  &__column-image-right {
+    width: 50%;
+    img {
+      border-bottom-left-radius: 200px;
+      display: block;
+      margin-left: auto;
+      @media (max-width: 500px) {
+        border-bottom-left-radius: 100px;
+      }
+    }
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+    }
+  }
+
+  &__column-text-left {
+    width: 50%;
+    padding: 0 60px;
+    h3 {
+      margin-top: 40px;
+    }
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 0 25px;
+    }
+    .ivd-veranstaltung__column-text-content {
+      margin-left: auto;
+      @media (max-width: $breakpoint-lg) {
+        margin-left: unset;
+      }
+    }
+  }
+
+  &__column-text-content {
+    max-width: 550px;
+    @media (max-width: $breakpoint-lg) {
+      max-width: 100%;
+    }
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
+
+.ivd-veranstaltungen-full {
+  h2 {
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 120px;
+  }
+  &__all-link {
+    text-align: right;
+    a {
+      color: #061849;
+      font-size: 20px;
+    }
+  }
+  padding-bottom: 100px;
+}

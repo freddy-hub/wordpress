@@ -1,0 +1,81 @@
+.ivd-marktplatz {
+  padding: 64px 0 0 0;
+  h2 {
+    text-align: center;
+  }
+
+  &__products {
+    margin-top: 100px;
+  }
+
+  &__product {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    @media (max-width: $breakpoint-lg) {
+      margin-bottom: 170px;
+    }
+  }
+
+  &__product-image-container {
+    width: 58%;
+    @media (max-width: $breakpoint-xl) {
+      width: 40%;
+    }
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+      margin-bottom: 30px;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  &__text-container {
+    width: 42%;
+    h4 {
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: $breakpoint-xl) {
+      width: 60%;
+      padding-left: 40px;
+    }
+    @media (max-width: $breakpoint-lg) {
+      width: 100%;
+    }
+  }
+
+  &__button-container {
+    margin-top: 40px;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    line-height: 1;
+    @media (max-width: 620px) {
+      flex-wrap: wrap;
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+
+      a {
+        width: 100%;
+      }
+    }
+  }
+  &__button-price {
+    font-size: 40px;
+    font-family: "Poppins";
+    padding-left: 0px;
+    margin-left: auto;
+    padding-right: 15px;
+    color: #0a51a1;
+    @media (max-width: 620px) {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+}

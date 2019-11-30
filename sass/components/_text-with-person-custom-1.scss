@@ -1,0 +1,112 @@
+.text-with-person-custom-1 {
+  position: relative;
+
+  margin-bottom: 100px;
+  background-color: #f2f2f2;
+  h2 {
+    text-align: center;
+  }
+  &__container {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 50px 15px 50px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 1024px) {
+      display: flex;
+    }
+    @media (max-width: 700px) {
+      display: block;
+      padding-top: 20px;
+    }
+  }
+
+  &__content {
+    max-width: 650px;
+    p {
+      font-weight: 600;
+      color: #051749;
+    }
+    @media (max-width: 1024px) {
+      max-width: 60%;
+    }
+    @media (max-width: 700px) {
+      max-width: 100%;
+      margin-top: 50px;
+    }
+    font-weight: 600;
+  }
+  &__image-container {
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+    img {
+      display: block;
+      width: 360px;
+    }
+    @media (max-width: 1200px) {
+      right: 20px;
+    }
+    @media (max-width: 1024px) {
+      width: 40%;
+    }
+
+    @media (max-width: 700px) {
+      // display: none;
+      position: static;
+      width: 100%;
+      border-bottom: 1px solid #051749;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    border-top: 1px solid #051749;
+    margin-top: 30px;
+  }
+  &__icons-item {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+    padding-right: 10px;
+    &:hover {
+      text-decoration: none;
+      .text-with-person-custom-1__icon-container img {
+        opacity: 0.6;
+      }
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+  &__icon-container {
+    background: #051749;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 100%;
+      transition: 0.6s;
+    }
+  }
+  &__text-container {
+    padding-left: 15px;
+    color: #051749;
+  }
+}

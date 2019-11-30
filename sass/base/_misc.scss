@@ -1,0 +1,65 @@
+// adjust z-index of freshchat button to put it below popup contact form
+#fc_frame {
+  z-index: 9000 !important;
+}
+// styling of bootstrap tooltips (on social icons under blog post)
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 0.25rem;
+  font-family: inherit;
+}
+
+//WP Rocket lazyload fadein
+/* Image with 'data' attribute is hidden */
+img[data-lazy-src] {
+  /* we set the opacity to 0 */
+  opacity: 0;
+}
+/* Image without 'data' attribute is (or becomes) visible */
+img.lazyloaded {
+  /* prepare the future animation */
+  -webkit-transition: opacity 0.5s linear 0.2s;
+  -moz-transition: opacity 0.5s linear 0.2s;
+  transition: opacity 0.5s linear 0.2s;
+  /* we set the opacity to 1 to do the magic */
+  opacity: 1;
+}
+
+/* Yasr plugin styling */
+
+.yasr-rating-box {
+  margin-bottom: 40px;
+}
+
+.yasr-rating-box .star-rating {
+  margin-right: 15px;
+}
+
+.yasr-rating-box .yasr-visitor-votes {
+  margin-top: 16px;
+}
+
+.yasr-rating-box #yasr-custom-text-before-visitor-rating {
+  display: none;
+}
+
+.yasr-dashicons-visitor-stats {
+  display: none;
+}
+
+.yasr-already-voted-text {
+  display: none;
+}
+
+#yasr-vote-saved {
+  display: none;
+}
+
+.yasr-rating-box .yasr-visitor-votes {
+  display: flex;
+  align-items: center;
+}

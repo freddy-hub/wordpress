@@ -1,0 +1,88 @@
+/*!
+Theme Name: makemango-real-estate
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: makemango-real-estate
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+makemango-real-estate is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/*--------------------------------------------------------------
+# Vendors
+--------------------------------------------------------------*/
+@import "vendors/bootstrap/bootstrap-reboot";
+@import "vendors/bootstrap/bootstrap-grid";
+
+/*--------------------------------------------------------------
+# Abstracts
+--------------------------------------------------------------*/
+@import "abstracts/variables";
+@import "abstracts/utilities";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/typography";
+// @import "base/misc";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/layout";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/ivd-single";
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+// @import "pages/pages";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/features";
+@import "components/text-with-person";
+// @import "components/text-with-person-custom-1";
+// @import "components/text-with-person-custom-2";
+
+/*--------------------------------------------------------------
+# Components ivd-plus
+--------------------------------------------------------------*/
+@import "components/ivd/ivd-hero-header";
+@import "components/ivd/ivd-2col-videos";
+@import "components/ivd/ivd-form-section";
+@import "components/ivd/ivd-2col-fullwidth";
+@import "components/ivd/ivd-veranstaltung";
+@import "components/ivd/ivd-unsere-partner";
+@import "components/ivd/ivd-magazin";
+@import "components/ivd/ivd-referenzen";
+@import "components/ivd/ivd-newsletter";
+@import "components/ivd/ivd-icons-grid";
+@import "components/ivd/ivd-marktplatz";
+@import "components/ivd/ivd-contentpaket";
+@import "components/ivd/ivd-product-section";
+@import "components/ivd/ivd-vorteile";
+@import "components/ivd/ivd-checklist-custom-bg";
+@import "components/ivd/ivd-custom-content";
+
+.screen-reader-text {
+  display: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+}

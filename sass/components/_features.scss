@@ -1,0 +1,23 @@
+.features {
+  margin-bottom: 100px;
+  i {
+    display: block;
+    font-size: 50px;
+    margin-bottom: 18px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  p {
+    margin-bottom: 60px;
+    line-height: 25px;
+  }
+  @media (max-width: 768px) {
+    .col-md-4 {
+      margin-bottom: 80px;
+    }
+  }
+}

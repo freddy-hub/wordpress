@@ -1,0 +1,59 @@
+.text-with-person {
+  position: relative;
+  padding-bottom: 25px;
+  border-bottom: 2px solid;
+  margin-bottom: 100px;
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+  }
+  &__content {
+    max-width: 600px;
+    margin-top: 100px;
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
+  }
+  &__image-container {
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    img {
+      display: block;
+    }
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    border-top: 1px solid blue;
+    margin-top: 40px;
+  }
+  &__icons-item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__icon-container {
+    background: blue;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-grow: 1;
+  }
+  &__text-container {
+    // flex-grow: 0;
+    padding-left: 15px;
+  }
+}
